@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import './App.css';
 import Homepage from './pages/Homepage'
 import Shop from './pages/Shop'
+import SignInSignUp from './pages/SignInSignUp'
 import Header from './components/Header'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         {/* exact=true only render exactly the right component */}
         <Route exact path='/' component={Homepage} />
         <Route path='/shop' component={Shop} />
+        <Route path='/signin' component={SignInSignUp} />
       </Switch>
     </div>
   )

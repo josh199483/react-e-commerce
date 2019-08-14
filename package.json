@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://josh199483.github.io/react-e-commerce",
   "dependencies": {
+    "firebase": "^6.3.5",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
