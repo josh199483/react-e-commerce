@@ -7,6 +7,7 @@ import './App.css';
 import Homepage from './pages/Homepage'
 import Shop from './pages/Shop'
 import SignInSignUp from './pages/SignInSignUp'
+import CheckoutPage from './pages/Checkout'
 import Header from './components/Header'
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 import { setCurrentUser } from './redux/user/userActions'
@@ -46,6 +47,7 @@ class App extends Component {
           {/* exact=true only render exactly the right component */}
           <Route exact path='/' component={Homepage} />
           <Route path='/shop' component={Shop} />
+          <Route exact path='/checkout' component={CheckoutPage} />
           <Route
             exact
             path='/signin'
